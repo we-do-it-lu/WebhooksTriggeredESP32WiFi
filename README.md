@@ -7,7 +7,7 @@ Features:
 * **User-friendly auto WiFi configuration:** Built-in admin web portal for fast and easy configuration without technical skills (Soft AP mode).
 * **Accepts http and https requests**
 * **Configure any GPIO you like** 
-* **The configured GPIOs are by automatically strapped-in:** Turn any GPIO HIGH or LOW (`http[s]://{IP address}/toggle?gpio={number}&action={0|1}`), Toggle any GPIO for a given duration (`http://{IP address}/toggle?gpio={number}&duration={milliseconds}`)
+* **The configured GPIOs are by automatically strapped-in:** Turn any GPIO HIGH or LOW (`$curl http://{IP address}/update?gpio={number}&state={0|1}`), Toggle any GPIO for a given duration (`http://{IP address}/trigger?gpio={number}&duration={milliseconds}`)
 * **Non-blocking:** Uses Async Web Server making it multi-threaded, super quick and responsive. 
 
 The code can be re-used as boilerplate to build your own self-hosted low-energy, uncensorable, async web server.
