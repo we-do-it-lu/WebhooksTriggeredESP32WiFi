@@ -10,7 +10,7 @@ Features:
 * **The configured GPIOs are by automatically strapped-in:** Turn any GPIO HIGH or LOW (`http[s]://{IP address}/toggle?gpio={number}&action={0|1}`), Toggle any GPIO for a given duration (`http://{IP address}/toggle?gpio={number}&duration={milliseconds}`)
 * **Non-blocking:** Uses Async Web Server making it multi-threaded, super quick and responsive. 
 
-The code can be re-used as boilerplate to build your own self-hosted low-energy, uncensorable webserver (Async web server).
+The code can be re-used as boilerplate to build your own self-hosted low-energy, uncensorable, async web server.
 Why reinvent the wheel?
 Just branch this project and start from there with all you need to get running in no time.
 
