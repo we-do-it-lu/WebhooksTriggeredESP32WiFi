@@ -43,3 +43,9 @@ You need to get the unit out of normal operations (station mode) and enter "Soft
 * Modify the parameters of your choice.
 * Click "save".
 * The unit has stored your parameters and resumed normal operations (station mode).
+
+### Still to be done
+* Re-implement TLS:https
+* Add code for "scheduled trigger" configurable through the admin interface.
+
+
