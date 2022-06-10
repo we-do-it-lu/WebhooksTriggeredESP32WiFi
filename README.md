@@ -7,7 +7,7 @@ Features:
 * **User-friendly auto WiFi configuration:** Built-in admin web portal for fast and easy configuration without technical skills (Soft AP mode).
 * **Accepts http and https requests**
 * **Configure any GPIO you like** 
-* **The configured GPIOs are by automatically strapped-in:** Turn any GPIO HIGH or LOW (`$curl http://{IP address}/update?gpio={number}&state={0|1}`), Toggle any GPIO for a given duration (`http://{IP address}/trigger?gpio={number}&duration={milliseconds}`)
+* **The configured GPIOs are automatically strapped-in:** Turn any GPIO HIGH or LOW (`$curl http://{IP address}/update?gpio={number}&state={0|1}`), Toggle any GPIO for a given duration (`http://{IP address}/trigger?gpio={number}&duration={milliseconds}`)
 * **Non-blocking:** Uses Async Web Server making it multi-threaded, super quick and responsive. 
 
 The code can be re-used as boilerplate to build your own self-hosted low-energy, uncensorable, async web server.
@@ -20,17 +20,17 @@ WiFi configuration is always a pain in the back on electronic projects: They don
 
 **A consistent, reliable, user-friendly way is now available!**
 
-This project uses the library ESPAsync_WiFiManager_Lite [details](https://github.com/khoih-prog/ESPAsync_WiFiManager_Lite). It is compatible for the ESP32/ESP8266 boards and also allows to persist data (WiFi credentials and whatever extra parameters you'd like) in EEPROM/SPIFFS/LittleFS for easy configuration/reconfiguration and autoconnect/autoreconnect of WiFi and other services without Hardcoding.
+This project uses the library ESPAsync_WiFiManager_Lite [details](https://github.com/khoih-prog/ESPAsync_WiFiManager_Lite). It is compatible with the ESP32/ESP8266 boards and also allows to persist data (WiFi credentials and whatever extra parameters you'd like) in EEPROM/SPIFFS/LittleFS for easy configuration/reconfiguration and autoconnect/autoreconnect of WiFi and other services without Hardcoding.
   
 ### Installation
-This project consists in 4 files: 
+The project is an Arduino sketch that consists in 4 files: 
 * 1 source code file (WebhooksTriggeredESP32WiFi.ino)
-* * Use it as is but you could as well adapt the code to your needs.
+* * Can be used as is by default but you can adapt the code to your needs.
 * 3 header files (defines.h, Credentials.h, dynamicParams.h)
-* * Contains various self-explainatory configuration parameters that you can adjust to your needs.
+* * Contains various self-explainatory configuration parameters
 
 ### Accessing the built-in admin web portal
-This behaviour can be changed in the .h file.
+This behaviour can be changed in the configuration file.
 
 You need to get the unit out of normal operations (station mode) and enter "Soft AP mode" to access its built-in admin web portal:
 * Press the RST button twice within less than 10 seconds.
